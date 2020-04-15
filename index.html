@@ -1,10 +1,32 @@
 <html lang="ja">
 <head>
+    <link rel="stylesheet"  href="css/index.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git web</title>
 </head>
 <body>
-    <p>test</p>
+    <h1>Introduce My Self</h1>
+    <div class="pattern"></div>
+    <video src="img/background.mp4" autoplay loop muted width="100%">
+      <img src="http://webcreatorbox.com/sample/images/jewellery.jpg" alt="Placeholder">
+    </video>
+
+<script src="https://player.vimeo.com/api/player.js">
+    var player = new Vimeo.Player($('#hoge'), {
+    id: ID,
+    autoplay: true, // 自動再生
+    autopause: false, // 2つの動画を埋め込む場合、同時再生を制御する
+    muted: true, // 自動再生の際は必須
+    loop: true, // 繰り返し
+    background: true // controlを非表示にしてミュート、繰り返し再生する
+  });
+  player.on('play', function(){
+   // 再生後の処理
+ });
+</script>
+<p>Name: Taisei Toda</p><br>
+<p>Live: Iwate</p><br>
+<p>Hobby: Snowbording</p><br>
 </body>
 </html>
